@@ -1,4 +1,4 @@
-setfpscap(5)
+setfpscap(2)
 task.spawn(function()
     script_key="OjmKOGcuGJAAOWeqNLJHCbcvQFMKFGXo";
     getgenv().Config = {

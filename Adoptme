@@ -1,6 +1,6 @@
 setfpscap(5)
 task.spawn(function()
-    script_key="EGwlAvzcHptUTgoLiZaTtRrSEabyDyAD";
+    script_key="OjmKOGcuGJAAOWeqNLJHCbcvQFMKFGXo";
     getgenv().Config = {
         ["PetAMountToBuy"] = "999", -- can be 999
         ["WhatCategory"] = "pets", -- gifts if WhatCategory = "" then = pets
@@ -34,7 +34,7 @@ task.spawn(function()
         ["DiscordId"] = "1391267750248189995",
         ["Webhook"] = "https://discord.com/api/webhooks/1431841577042579528/SpTpW77HGUJPH0g6FIpuumY3zAgZiENdToPErVBDTMBon1A32WeST8OM4htU0Wa3v_ay",
         ["LegendaryWebhook"] = "https://discord.com/api/webhooks/1433647994905034865/OG13qEaO8fm4L8UnVObKT8Lh_76J_xo4pSLCT_nhk6lwDsPA63BBIfP7-D9A8dDiEBG4",
-        ["NeonMegaWebhook"] = "",
+        ["NeonMegaWebhook"] = "https://discord.com/api/webhooks/1433647994905034865/OG13qEaO8fm4L8UnVObKT8Lh_76J_xo4pSLCT_nhk6lwDsPA63BBIfP7-D9A8dDiEBG4",
     }
     loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/66567bfd337b57eb059b58dbe1badb89.lua"))()
 end)

@@ -1,6 +1,6 @@
 setfpscap(2)
 task.spawn(function()
-    script_key="OjmKOGcuGJAAOWeqNLJHCbcvQFMKFGXo";
+    script_key="dnIztQIVjdPPJIulupfkuruuJfEXyZHJ";
     getgenv().Config = {
         ["PetAMountToBuy"] = "999", -- can be 999
         ["WhatCategory"] = "pets", -- gifts if WhatCategory = "" then = pets

@@ -2,17 +2,17 @@ setfpscap(3)
 task.spawn(function()
     script_key="dnIztQIVjdPPJIulupfkuruuJfEXyZHJ";
     getgenv().Config = {
-        ["PetAMountToBuy"] = "999", -- can be 999
+        ["PetAMountToBuy"] = "25", -- can be 999
         ["WhatCategory"] = "pets", -- gifts if WhatCategory = "" then = pets
-        ["PetRemoteToBuy"] = "aztec_egg_2025_aztec_egg", -- exemple for gifts halloween_2025_spider_box
+        ["PetRemoteToBuy"] = "winter_2025_christmas_spirit", -- exemple for gifts halloween_2025_spider_box
 
 
-        ["PetFarmAutoSwitchFullGrown"] = false,
+        ["PetFarmAutoSwitchFullGrown"] = true,
         ["PetFarmActive"] = false, -- farm potion
 
 
         ["EggFarmActive"] = true, -- farm egg, if no more eggs will farm potion, if found new egg will farm them to
-        ["EggToIgnore"] = {""}, -- eggs to ignore when eggfarm active
+        ["EggToIgnore"] = {"pet_recycler_2025_basic_egg"}, -- eggs to ignore when eggfarm active
         ["LoopBuyEgg"] = false, -- when enough bucks will buy egg, only work with eggfarm
         ["EggToBuyEgg"] = "aztec_egg_2025_aztec_egg",
 

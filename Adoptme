@@ -8,6 +8,8 @@ task.spawn(function()
 
 
         ["PetFarmAutoSwitchFullGrown"] = false,
+        ["check_for_2d_kitty"] = true,
+        ["Yarn_Beanie"] = true,
         ["PetFarmActive"] = true, -- farm potion
 
 

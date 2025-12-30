@@ -2,9 +2,9 @@ setfpscap(3)
 task.spawn(function()
     script_key="dnIztQIVjdPPJIulupfkuruuJfEXyZHJ";
     getgenv().Config = {
-        ["PetAMountToBuy"] = "25", -- can be 999
+        ["PetAMountToBuy"] = "5", -- can be 999
         ["WhatCategory"] = "pets", -- gifts if WhatCategory = "" then = pets
-        ["PetRemoteToBuy"] = "winter_2025_christmas_spirit", -- exemple for gifts halloween_2025_spider_box
+        ["PetRemoteToBuy"] = "winter_2025_angus_box", -- exemple for gifts halloween_2025_spider_box
 
 
         ["PetFarmAutoSwitchFullGrown"] = true,

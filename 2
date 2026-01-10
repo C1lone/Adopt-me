@@ -1,1 +1,67 @@
-
+ getgenv().Config = {
+        BabyFarm = true, 
+        PetFarm = {
+            Enabled = true, 
+            FarmEggs = true, 
+            BuyEggs = true, 
+            EggType = "any", 
+            BuyEggType = "aztec_egg_2025_aztec_egg", 
+            MaxPets = 1, 
+            FarmUntilFullGrown = true,
+            PrioritizeFriendship = false,
+            SelectiveFarm = false, 
+            SelectedPetTypes = {}, 
+        },
+        AutoNeon = {
+            Enabled = true, 
+            MakeMega = false, 
+            NeonAll = false, 
+            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake"}, 
+            MaxPerType = {}, 
+        },
+        Settings = {
+            ShowOverlay = true, 
+            ReduceGraphics = true, 
+            FPSCap = 2, 
+        },
+        AutoBuy = {
+            Enabled = false, 
+            SelectedItems = {}, 
+            BuyAmounts = {}, 
+        },
+        AutoOpen = {
+            Enabled = false, 
+            Items = {}, 
+        },
+        AutoPotion = {
+            Enabled = true, 
+            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "pet_recycler_2025_giant_panda"}, 
+        },
+        AutoRecycle = {
+            Enabled = true, 
+            RarityFilter = {common = true, uncommon = true, rare = true, ultra_rare = true, legendary = true}, 
+            AgeFilter = {}, 
+            VersionFilter = {}, 
+            ExcludedPets = {"penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "pet_recycler_2025_giant_panda", "aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "winter_2025_angus_bull"},
+        },
+        IdleProgression = {
+            Enabled = true,
+            SelectedPets = {"winter_2025_angus_bull", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "pet_recycler_2025_giant_panda", "aztec_egg_2025_aztec_egg"}, 
+            ExcludedPets = {}, 
+        },
+        Webhook = {
+            Enabled = true, 
+            URL = "https://discord.com/api/webhooks/1455704665046913140/fQrhCSbd35djGi7jv9D-jHKEjeYZVfT-R7IN-I5VICpSGpu9TDJo8-eHpGW7E13TCx0b", 
+            PetUnlock = {
+                Enabled = true, 
+                URL = "https://discord.com/api/webhooks/1455704760761192458/ZCuKFv7Q4QSL_UeYTJayA2pyyZ4PwkqdWOiilE92VZRSZ8mxR0cVOwK34daDrfYJ7B_P", 
+                FilterRarities = {"legendary"}, 
+            },
+        },
+        TaskExclusion = {
+            Enabled = false,
+            ExcludedTasks = {},
+        },
+    };
+script_key="BhSxIGoBTSmwCUZvgmsHTrPNYGpyOapQ"
+loadstring(game:HttpGet("https://zekehub.com/scripts/AdoptMe/Lite.lua"))()

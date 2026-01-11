@@ -1,1 +1,40 @@
+setfpscap(2)
+task.spawn(function()
+    script_key="huFOkAXcRqtXLQNdsEbCRxEVMxrVlPgy";
+    getgenv().Config = {
+        ["PetAMountToBuy"] = "0", -- can be 999
+        ["WhatCategory"] = "pets", -- gifts if WhatCategory = "" then = pets
+        ["PetRemoteToBuy"] = "aztec_egg_2025_aztec_egg", -- exemple for gifts halloween_2025_spider_box
 
+
+        ["PetFarmAutoSwitchFullGrown"] = false,
+        ["PetFarmActive"] = false, -- farm potion
+
+
+        ["EggFarmActive"] = true, -- farm egg, if no more eggs will farm potion, if found new egg will farm them to
+        ["EggToIgnore"] = {""}, -- eggs to ignore when eggfarm active
+        ["LoopBuyEgg"] = false, -- when enough bucks will buy egg, only work with eggfarm
+        ["EggToBuyEgg"] = "aztec_egg_2025_aztec_egg",
+
+
+        ["NeonMegaFarm"] = true,
+        ["BuyEgg"] = "aztec_egg_2025_aztec_egg", -- only work with NeonMegaFarm, will loop buy this egg when enough bucks
+        
+
+        ["AutoReleasePet"] = true, -- work with egg/pet farm, will release selected rarity
+        ["RecycleWebhook"] = "https://discord.com/api/webhooks/1444544363924291675/MoaPpUuW4PDOBQ6zrdfCY-P0f9S8R0oroEV8s28EOjTqscuFumWoq9Avpjk0vcQq35Xe",
+        ["common"] = true,
+        ["uncommon"] = true,
+        ["rare"] = true,
+        ["ultra_rare"] = true,
+
+        ["HideUselessGui"] = true,
+        ["Blur_username"] = true,
+        ["Blazing_Lion_Log"] = false,
+        ["DiscordId"] = "817274027000856577",
+        ["Webhook"] = "https://discord.com/api/webhooks/1454910736840130661/H5ifc-SV-PN9onKGxdqitMZ-78ndcHf1YJ_t3e1DTzPgjJI680xBNnUh0fY-jXuJ-MMy",
+        ["LegendaryWebhook"] = "https://discord.com/api/webhooks/1433647994905034865/OG13qEaO8fm4L8UnVObKT8Lh_76J_xo4pSLCT_nhk6lwDsPA63BBIfP7-D9A8dDiEBG4",
+        ["NeonMegaWebhook"] = "https://discord.com/api/webhooks/1433647994905034865/OG13qEaO8fm4L8UnVObKT8Lh_76J_xo4pSLCT_nhk6lwDsPA63BBIfP7-D9A8dDiEBG4",
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/66567bfd337b57eb059b58dbe1badb89.lua"))()
+end)

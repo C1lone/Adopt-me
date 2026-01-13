@@ -17,7 +17,7 @@ getgenv().Config = {
             SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
         },
         AutoTrade = {
-            Enabled = true, -- Enable auto trading
+            Enabled = false, -- Enable auto trading
             AutoAcceptTrades = false, -- Accept incoming trade requests
             Usernames = {"starpetsclone_23"}, -- Players to send trades to
             TradeMode = "specific", -- "all" = everything in categories, "specific" = only Items list
@@ -42,8 +42,8 @@ getgenv().Config = {
             FPSCap = 2, -- FPS cap option (0 = uncapped)
         },
         AutoPotion = {
-            Enabled = false, -- Use age potions on pets to level them up
-            SelectedPets = {}, -- Pet IDs to use potions on (empty = does nothing)
+            Enabled = true, -- Use age potions on pets to level them up
+            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "food_pets_2026_dragonfruit_fox", "penguins_2025_dango_penguins", "pet_recycler_2025_giant_panda", "pet_recycler_2025_emberlight", "diamond_unicorn", "diamond_dragon", "diamond_griffin"}, -- Pet IDs to use potions on (empty = does nothing)
         },
         AutoBuy = {
             Enabled = false, -- Automatically buy items from shops

@@ -1,65 +1,67 @@
  getgenv().Config = {
-        BabyFarm = true, 
+        BabyFarm = true, -- Does baby farm
         PetFarm = {
-            Enabled = true, 
-            FarmEggs = true, 
-            BuyEggs = true, 
-            EggType = "any", 
-            BuyEggType = "aztec_egg_2025_aztec_egg", 
-            MaxPets = 1, 
-            FarmUntilFullGrown = false, 
-            PrioritizeFriendship = false, 
-            SelectiveFarm = false, 
-            SelectedPetTypes = {}, 
+            Enabled = true, -- Enables the Pet Farm
+            FarmEggs = true, -- If true, equips eggs to hatch them. If false, equips regular pets
+            BuyEggs = true, -- If FarmEggs is true and no eggs in inventory, buy eggs automatically
+            EggType = "any", -- Which egg to equip ("any" = first available, or specific egg ID)
+            BuyEggType = "aztec_egg_2025_aztec_egg", -- Which egg to buy when BuyEggs is true ("any" or specific egg ID)
+            MaxPets = 1, -- How many pets to equip at once (1 = free, 2 = requires Robux gamepass)
+            FarmUntilFullGrown = false, -- If true, selects pets that aren't full grown first
+            PrioritizeFriendship = false, -- If true, selects pets with higher friendship level first
+            SelectiveFarm = false, -- If true, only farm pets in SelectedPetTypes list
+            SelectedPetTypes = {}, -- Pet IDs to farm when SelectiveFarm is true (e.g., {"dog", "cat"})
         },
         AutoNeon = {
-            Enabled = true, 
-            MakeMega = false, 
-            NeonAll = true, 
-            SelectedPets = {}, 
-            MaxPerType = {}, 
+            Enabled = true, -- Enable auto neon/mega fusion
+            MakeMega = false, -- Fuse neons into mega neons
+            NeonAll = true, -- Neon everything possible
+            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "pet_recycler_2025_giant_panda", "golden_unicorn", "golden_dragon", "food_pets_2026_dragonfruit_fox", "diamond_unicorn", "diamond_griffin", "diamond_dragon", "basic_egg_2022_ancient_dragon"}, -- {} when NeonAll = true, otherwise {"dog", "cat"} etc
+            MaxPerType = {}, -- {} = unlimited, {dog = 2, cat = 1} = limits per pet type
         },
         Settings = {
-            ShowOverlay = true, 
-            ReduceGraphics = true, 
-            FPSCap = 2, 
-            LureId = "ice_dimension_2025_ice_soup_bait", 
+            ShowOverlay = true, -- Show stats overlay (disables 3D rendering)
+            ReduceGraphics = true, -- Reduce graphics quality to minimum
+            FPSCap = 2, -- FPS cap option (0 = uncapped)
+            LureId = "ice_dimension_2025_ice_soup_bait", -- what lure to use for example: "ice_dimension_2025_ice_soup_bait"
         },
         AutoBuy = {
-            Enabled = false, 
-            SelectedItems = {}, 
-            BuyAmounts = {}, 
+            Enabled = false, -- Automatically buy items from shops
+            SelectedItems = {"gifts|winter_2025_angus_box"}, -- Item IDs to buy
+            BuyAmounts = {}, -- How many of each item to buy. Example: {5, 10} buys 5 cracked_eggs and 10 sandwiches. Empty {} buys infinite of each item. If there are more items than amounts, remaining items default to infinite.
         },
         AutoOpen = {
-            Enabled = false, 
-            Items = {},
+            Enabled = false, -- Open gift boxes automatically
+            Items = {}, -- Item IDs to auto open (e.g., {"winter_2025_angus_box"})
         },
         AutoPotion = {
-            Enabled = true, 
-            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "pet_recycler_2025_giant_panda", "golden_unicorn", "golden_dragon", "food_pets_2026_dragonfruit_fox", "diamond_unicorn", "diamond_griffin", "diamond_dragon", "basic_egg_2022_ancient_dragon"}, 
+            Enabled = true, -- Use age potions on pets to level them up
+            SelectedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "pet_recycler_2025_giant_panda", "golden_unicorn", "golden_dragon", "food_pets_2026_dragonfruit_fox", "diamond_unicorn", "diamond_griffin", "diamond_dragon", "basic_egg_2022_ancient_dragon"}, -- Pet IDs to use potions on (empty = does nothing)
+        },
         AutoRecycle = {
-            Enabled = true, 
-            RarityFilter = {common = true, uncommon = true, rare = true, ultra_rare = true, legendary = true}, 
-            AgeFilter = {}, 
-            VersionFilter = {}, 
-            ExcludedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "pet_recycler_2025_giant_panda", "golden_unicorn", "golden_dragon", "food_pets_2026_dragonfruit_fox", "diamond_unicorn", "diamond_griffin", "diamond_dragon", "basic_egg_2022_ancient_dragon"}, 
+            Enabled = true, -- Recycle pets at recycler for rewards
+            RarityFilter = {common = true, uncommon = true, rare = true, ultra_rare = true, legendary = true}, -- Which rarities to recycle (true = recycle, false = keep)
+            AgeFilter = {}, -- empty = all ages, or {1,2,3,4,5,6}
+            VersionFilter = {}, -- empty = all, or {"regular", "neon", "mega"}
+            ExcludedPets = {"aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "pet_recycler_2025_giant_panda", "golden_unicorn", "golden_dragon", "food_pets_2026_dragonfruit_fox", "diamond_unicorn", "diamond_griffin", "diamond_dragon", "basic_egg_2022_ancient_dragon"}, -- Pet IDs to never recycle even if rarity matches {"dog", "cat"}
         },
         IdleProgression = {
-            Enabled = true, 
-            SelectedPets = {"aztec_egg_2025_aztec_egg", "pet_recycler_2025_crystal_egg", "aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "pet_recycler_2025_giant_panda", "golden_unicorn", "golden_dragon", "food_pets_2026_dragonfruit_fox", "diamond_unicorn", "diamond_griffin", "diamond_dragon", "basic_egg_2022_ancient_dragon"},
+            Enabled = true, -- Put pets in pet pen for idle leveling
+            SelectedPets = {"aztec_egg_2025_aztec_egg", "pet_recycler_2025_crystal_egg", "aztec_egg_2025_temple_friend", "aztec_egg_2025_winged_snake", "penguins_2025_dango_penguins", "pet_recycler_2025_emberlight", "pet_recycler_2025_giant_panda", "golden_unicorn", "golden_dragon", "food_pets_2026_dragonfruit_fox", "diamond_unicorn", "diamond_griffin", "diamond_dragon", "basic_egg_2022_ancient_dragon"}, -- Pet IDs to put in pet pen (empty = use all)
+            ExcludedPets = {}, -- Pet IDs to never put in pet pen
         },
         Webhook = {
-            Enabled = true, 
-            URL = "https://discord.com/api/webhooks/1455704665046913140/fQrhCSbd35djGi7jv9D-jHKEjeYZVfT-R7IN-I5VICpSGpu9TDJo8-eHpGW7E13TCx0b", 
+            Enabled = true, -- Send webhook notifications to Discord
+            URL = "https://discord.com/api/webhooks/1455704665046913140/fQrhCSbd35djGi7jv9D-jHKEjeYZVfT-R7IN-I5VICpSGpu9TDJo8-eHpGW7E13TCx0b", -- Discord webhook URL for notifications
             PetUnlock = {
-                Enabled = true, 
-                URL = "https://discord.com/api/webhooks/1455704760761192458/ZCuKFv7Q4QSL_UeYTJayA2pyyZ4PwkqdWOiilE92VZRSZ8mxR0cVOwK34daDrfYJ7B_P", 
-                FilterRarities = {"legendary", "ultra_rare"}, 
+                Enabled = true, -- Send webhook when hatching/unlocking a pet
+                URL = "https://discord.com/api/webhooks/1455704760761192458/ZCuKFv7Q4QSL_UeYTJayA2pyyZ4PwkqdWOiilE92VZRSZ8mxR0cVOwK34daDrfYJ7B_P", -- Webhook URL for pet unlocks
+                FilterRarities = {"legendary", "ultra_rare"}, -- Only send for these rarities
             },
         },
         TaskExclusion = {
-            Enabled = false, 
-            ExcludedTasks = {}, 
+            Enabled = false, -- Skip certain farming tasks
+            ExcludedTasks = {}, -- Task IDs to skip (e.g., {"buccaneer_band", "summerfest_bonfire"})
         },
     };
 getgenv().scriptkey="WwFVJRMALBwSWhLKpZdPfyVJLWcEwUAK"
